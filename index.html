@@ -424,6 +424,11 @@
             abrirseguinte();
         }
 
+        function abrirmenumenusobre() {
+            menu2.removeChild(contacto2);
+            menu2.appendChild(sobre2);
+            }
+
         function abrirmenucontacto(){    
             menu2.removeChild(sobre2);
             menu2.appendChild(contacto2);
@@ -502,6 +507,7 @@
         sobre.id="menu-sobre";
         sobre.innerHTML="<p>Sobre</p>";
         menu1.appendChild(sobre);
+        sobre.addEventListener('click', abrirmenumenusobre);
         
         var contacto=document.createElement('DIV');
         contacto.id="menu-contacto";
