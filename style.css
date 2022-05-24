@@ -1,0 +1,910 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Raleway:ital@0;1&display=swap');
+
+body{
+    background-color: #FCEFEF;
+    margin: 0%;
+}
+
+/* INTRO */
+
+#video-intro{
+    width: 70vw;
+    height: 70vh;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index:1;
+    cursor: pointer;
+  }
+
+/* TRAILER */
+
+#sidenav-trailer{
+    height: 100%; 
+    width: 100%;
+    position: fixed;
+    background-color: #632E13;
+    transition: 1s;
+}
+
+#video-trailer{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 5.5%;
+    left: 5%;
+    animation: fadeIn 3s;
+
+}
+
+#close{
+    height: 3%;
+    width: auto;
+    float: right;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    cursor: pointer;
+    animation: fadeIn 8s;
+}
+
+/* HOMEPAGE */
+
+#barra-header{
+    height: 65px;
+    width: 100%;
+    background-color: #632E13;
+}
+
+#logo-rosa{
+    height: 55px;
+    width: auto;
+    position: relative;
+    top: 8%;
+    left: 1%;
+    cursor: pointer;
+}
+
+#titulo-rosa{
+    width: 170px;
+    height: auto;
+    position: relative;
+    top: 8%;
+    left: 1.5%;
+    cursor: pointer;
+}
+
+#menubarras{
+    height: 43%;
+    position: relative;
+    float: right;
+    top: 28%;
+    right: 1%;
+    cursor: pointer; 
+}
+
+#menu1{
+    background-color: black;
+}
+
+#menu-1{
+    position: absolute;
+    top: 9%;
+    background-color: rgb(99, 46, 19, 0.9);
+    height: 97.8%;
+    width: 15%;
+    right: 0%;
+    color: white;
+    font-size: 16px;
+    font-family: Homemade Apple;
+    text-align: center;
+}
+
+
+#menu-sobre{
+    cursor: pointer;
+}
+
+#menu-equipa{
+    cursor: pointer;
+}
+
+#menu-contacto{
+    cursor: pointer;
+}
+
+#menu-sobre:hover{
+    text-decoration: underline;
+}
+
+#menu-sobre:focus{
+    text-decoration: underline;
+}
+
+#menu-contacto:hover{
+    text-decoration: underline;
+}
+
+#menu-equipa:hover{
+    text-decoration: underline;
+}
+
+#menu-2{
+    position: absolute;
+    top: 1%;
+    background-color: rgb(99, 46, 19, 0.9);
+    height: 99%;
+    width: 149%;
+    right: 100%;
+
+}
+
+#menu-sobre2{
+    color: white;
+    font-size: 14px;
+    font-family: Raleway;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    padding: 5%;
+}
+
+#img-contactos{
+    position: relative;
+    width: 70%;
+    top: 45%;
+    left: 10%;
+}
+
+/* slide */
+
+#fotos-slide{
+    flex-direction: row;
+    display: flex;
+}
+
+
+#container-slide {
+    background-image: url(img/foto-1.jpg);
+    background-color: #3d1d0f;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%;
+    height: 592px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s;
+    float: left;
+    cursor: pointer;
+}
+
+#container-slide:hover {
+    width: 40%;
+}
+
+#container-slide2 {
+    background-image: url(img/foto-2.jpg);
+    background-color: #3d1d0f;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #eac8c8;
+    width: 20%;
+    height: 592px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s;
+    float: left;
+    cursor: pointer;
+}
+
+#container-slide2:hover {
+    width: 40%;
+}
+
+#container-slide3 {
+    background-image: url(img/foto-3.jpg);
+    transform: scaleX(-1);
+    background-color: #3d1d0f;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #eac8c8;
+    width: 20%;
+    height: 592px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s;
+    float: left;
+    cursor: pointer;
+}
+
+#container-slide3:hover {
+    width: 40%;
+}
+
+#container-slide4 {
+    background-image: url(img/foto-4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%;
+    height: 592px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s;
+    float: left;
+    cursor: pointer;
+}
+
+#container-slide4:hover {
+    width: 40%;
+}
+
+#container-slide5 {
+    background-image: url(img/foto-5.jpg);
+    transform: scaleX(-1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%;
+    height: 592px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s;
+    float: left;
+    cursor: pointer;
+}
+
+#container-slide5:hover {
+    width: 40%;
+}
+
+#div-bio{
+    background-image: url(img/biobg.png);
+    width: 100%;
+    
+}
+
+/* rodapé */
+
+#poema1{
+  
+  color: black;
+  font-size: 16px;
+  font-family: Homemade Apple;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 3px;
+  line-height: 2.6;
+  margin-top: 5%;
+  
+}
+
+#linha1{
+  width: 18%;
+  border: 0px solid #000;
+  margin-left:48%;
+  margin-top:5%;
+}
+
+#autor1{
+  
+  color: black;
+  font-size: 13px;
+  font-family: Homemade Apple;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 3px;
+  line-height: 2.6;
+  margin-left:20%;
+  
+}
+
+/*icons bio */
+
+#play-icon{
+    height: 8%;
+    position: absolute;
+    bottom: 12.5%;
+    left: 48%;
+    cursor: pointer;
+    animation: fadeIn 8s;
+}
+
+#home-icon{    
+    height: 7%;
+    position: absolute;
+    bottom: 12.5%;
+    left: 42%;
+    cursor: pointer;
+    animation: fadeIn 8s;
+}
+
+#seta-icon{
+    height: 7%;
+    position: absolute;
+    bottom: 12.5%;
+    left: 54%;
+    cursor: pointer;
+    animation: fadeIn 8s;
+}
+
+/* BIO NUNO */
+
+#nunocanavezbio{
+    height: 66%;
+    position: absolute;
+    top: 30%;
+    left: 38%;
+    animation: fadeIn 3s;
+}
+
+#nome-nc{
+    height: 150px;
+    position: relative;
+    top: 1%;
+    animation: fadeIn 3s;
+
+}
+
+
+#texto-bio1{
+    height: 17px;
+    width: 95%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 2.1;
+    position: relative;
+    left: 2.5%;
+    bottom: 6%;
+    animation: fadeIn 6s;
+}
+
+#cit-bio1{
+    width: 35%;
+    height: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 2.3;
+    position: relative;
+    left: 2.5%;
+    top: 40%;
+    animation: fadeIn 15s;
+}
+
+/* VIDEO */
+
+#nav-vid{
+    width: 100%;
+    height: 520px;
+}
+
+#vid-nuno{
+    position: relative;
+    text-align: center;
+    top: 10%;
+    left: 10%;
+    animation: fadeIn 3s;
+}
+
+#moldura{
+    position: relative;
+    height: 80%;
+    width: 55%;
+    background-color: #d2c7cb;
+    left: 23%;
+    top: 10.5%;
+    animation: fadeIn 3s;
+}
+
+#seguinte-2{
+    height: 10%;
+    position: relative;
+    left: 80%;
+    cursor:pointer;
+    transition: transform .3s;
+    animation: fadeIn 8s;
+}
+
+#seguinte-2:hover{
+    transform: scale(1.2);
+}
+
+#anterior-2{
+    height: 10%;
+    position: relative;
+    left: 13%;
+    cursor:pointer;
+    transition: transform .3s;
+    animation: fadeIn 8s;
+}
+
+#anterior-2:hover{
+    transform: scale(1.2);
+}
+
+/* CEDOFEITA */
+
+#div-bio2{
+    background-image: url(img/biobg.png);
+    width: 100%;
+}
+
+#img-cedofeita{
+    height: 70%;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    animation: fadeIn 3s;
+}
+
+#nome-americo{
+    height: 120px;
+    position: relative;
+    top: 1%;
+    animation: fadeIn 3s;
+}
+
+
+#texto-bio2{
+    height: 17px;
+    width: 95%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 2.1;
+    position: relative;
+    left: 2.5%;
+    top: 5%;
+    animation: fadeIn 6s;
+
+}
+
+#play-icon2{
+    height: 8%;
+    position: absolute;
+    bottom: 9.5%;
+    left: 50%;
+    cursor: pointer;
+    animation: fadeIn 8s;
+}
+
+#home-icon2{    
+    height: 7%;
+    position: absolute;
+    bottom: 10%;
+    left: 44%;
+    cursor: pointer;
+    animation: fadeIn 8s;
+}
+
+#seta-icon2{
+    height: 7%;
+    position: absolute;
+    bottom: 10%;
+    left: 56%;
+    cursor: pointer;
+    animation: fadeIn 8s;
+}
+
+/* VIDEO 2*/
+
+#nav-vid2{
+    width: 100%;
+    height: 520px;
+}
+
+#vid-cedofeita{
+    position: relative;
+    text-align: center;
+    top: 10%;
+    left: 10%;
+    animation: fadeIn 3s;
+}
+
+#moldura2{
+    position: relative;
+    height: 80%;
+    width: 55%;
+    background-color: #d2c7cb;
+    left: 23%;
+    top: 10.5%;
+    animation: fadeIn 3s;
+}
+
+#seguinte-3{
+    height: 10%;
+    position: relative;
+    left: 80%;
+    cursor:pointer;
+    transition: transform .3s;
+    animation: fadeIn 8s;
+}
+
+#seguinte-3:hover{
+    transform: scale(1.2);
+}
+
+#anterior-3{
+    height: 10%;
+    position: relative;
+    left: 13%;
+    cursor:pointer;
+    transition: transform .3s;
+    animation: fadeIn 8s;
+}
+
+#anterior-3:hover{
+    transform: scale(1.2);
+}
+
+/* OLINDA */
+
+#div-bio3{
+    background-image: url(img/biobg.png);
+    width: 100%;
+    
+}
+
+#img-olinda{
+    height: 63%;
+    position: absolute;
+    top: 32%;
+    left: 39%;
+    animation: fadeIn 3s;
+}
+
+#nome-olinda{
+    height: 22%;
+    position: relative;
+    top: 1%;
+    animation: fadeIn 3s;
+}
+
+
+#texto-bio3{
+    height: 17px;
+    width: 95%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 2.1;
+    position: relative;
+    left: 2.5%;
+    bottom: 0%;
+    animation: fadeIn 6s;
+}
+
+#play-icon3{
+    height: 8%;
+    position: absolute;
+    bottom: 13%;
+    left: 48%;
+    cursor: pointer;
+    animation: fadeIn 8s;
+}
+
+#home-icon3{    
+    height: 7%;
+    position: absolute;
+    bottom: 13.5%;
+    left: 42%;
+    cursor: pointer;
+    animation: fadeIn 8s;
+}
+
+#seta-icon3{
+    height: 7%;
+    position: absolute;
+    bottom: 13.5%;
+    left: 55%;
+    cursor: pointer;
+    animation: fadeIn 8s;
+}
+
+/* VIDEO 3*/
+
+#nav-vid3{
+    width: 100%;
+    height: 520px;
+}
+
+#vid-olinda{
+    position: relative;
+    text-align: center;
+    top: 10%;
+    left: 10%;
+    animation: fadeIn 3s;
+}
+
+#moldura3{
+    position: relative;
+    height: 80%;
+    width: 55%;
+    background-color: #d2c7cb;
+    left: 23%;
+    top: 10.5%;
+    animation: fadeIn 3s;
+}
+
+#seguinte-5{
+    height: 10%;
+    position: relative;
+    left: 80%;
+    cursor:pointer;
+    transition: transform .3s;
+    animation: fadeIn 8s;
+}
+
+#seguinte-5:hover{
+    transform: scale(1.2);
+}
+
+#anterior-5{
+    height: 10%;
+    position: relative;
+    left: 13%;
+    cursor:pointer;
+    transition: transform .3s;
+    animation: fadeIn 8s;
+}
+
+#anterior-5:hover{
+    transform: scale(1.2);
+}
+
+/* VESTIDOS */
+
+#div-bio4{
+    background-image: url(img/biobg.png);
+    width: 100%;
+    
+}
+
+#img-vestidos{
+    height: 63%;
+    position: absolute;
+    top: 36%;
+    left: 40%;
+    animation: fadeIn 3s;
+}
+
+#nome-vestidos{
+    height: 25%;
+    position: relative;
+    top: 1%;
+    animation: fadeIn 3s;
+}
+
+
+#texto-bio4{
+    height: 17px;
+    width: 95%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 2.1;
+    position: relative;
+    left: 2.5%;
+    top: 1%;
+    animation: fadeIn 6s;
+}
+
+#play-icon4{
+    height: 8%;
+    position: absolute;
+    bottom: 10.5%;
+    left: 49%;
+    cursor: pointer;
+    animation: fadeIn 8s;
+}
+
+#home-icon4{    
+    height: 7%;
+    position: absolute;
+    bottom: 10.5%;
+    left: 44%;
+    cursor: pointer;
+    animation: fadeIn 8s;
+}
+
+#seta-icon4{
+    height: 7%;
+    position: absolute;
+    bottom: 10%;
+    left: 55%;
+    cursor: pointer;
+    animation: fadeIn 8s;
+}
+
+/* VIDEO 4*/
+
+#nav-vid4{
+    width: 100%;
+    height: 520px;
+}
+
+#vid-vestidos{
+    position: relative;
+    text-align: center;
+    top: 10%;
+    left: 10%;
+    animation: fadeIn 3s;
+}
+
+#moldura4{
+    position: relative;
+    height: 80%;
+    width: 55%;
+    background-color: #d2c7cb;
+    left: 23%;
+    top: 10.5%;
+    animation: fadeIn 3s;
+}
+
+#seguinte-7{
+    height: 10%;
+    position: relative;
+    left: 80%;
+    cursor:pointer;
+    transition: transform .3s;
+    animation: fadeIn 8s;
+}
+
+#seguinte-7:hover{
+    transform: scale(1.2);
+}
+
+#anterior-7{
+    height: 10%;
+    position: relative;
+    left: 13%;
+    cursor:pointer;
+    transition: transform .3s;
+    animation: fadeIn 8s;
+}
+
+#anterior-7:hover{
+    transform: scale(1.2);
+}
+
+/* RIBEIRA */
+
+#div-bio5{
+    background-image: url(img/biobg.png);
+    width: 100%;
+}
+
+#img-ribeira{
+    height: 70%;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    animation: fadeIn 3s;
+}
+
+#nome-ribeira{
+    height: 25%;
+    position: relative;
+    top: 1%;
+    animation: fadeIn 3s;
+}
+
+
+#texto-bio5{
+    height: 17px;
+    width: 95%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 2.1;
+    position: relative;
+    left: 2.5%;
+    bottom: 2%;
+    animation: fadeIn 6s;
+}
+
+#play-icon5{
+    height: 8%;
+    position: absolute;
+    bottom: 9.5%;
+    left: 54%;
+    cursor: pointer;
+    animation: fadeIn 8s;
+}
+
+#home-icon5{    
+    height: 7%;
+    position: absolute;
+    bottom: 9.5%;
+    left: 47%;
+    cursor: pointer;
+    animation: fadeIn 8s;
+}
+
+#seta-icon6{
+    height: 7%;
+    position: absolute;
+    bottom: 10.5%;
+    left: 54%;
+    cursor: pointer;
+    animation: fadeIn 8s;
+}
+
+/* VIDEO 5*/
+
+#nav-vid5{
+    width: 100%;
+    height: 520px;
+}
+
+#vid-ribeira{
+    position: relative;
+    text-align: center;
+    top: 10%;
+    left: 10%;
+    animation: fadeIn 3s;
+}
+
+#moldura5{
+    position: relative;
+    height: 80%;
+    width: 55%;
+    background-color: #d2c7cb;
+    left: 23%;
+    top: 10.5%;
+    animation: fadeIn 3s;
+}
+
+#x-final{
+    height: 10%;
+    position: relative;
+    left: 80%;
+    cursor:pointer;
+    transition: transform .3s;
+    animation: fadeIn 8s;
+}
+
+#x-final:hover{
+    transform: scale(1.2);
+}
+
+#anterior-9{
+    height: 10%;
+    position: relative;
+    left: 13%;
+    cursor:pointer;
+    transition: transform .3s;
+    animation: fadeIn 8s;
+}
+
+#anterior-9:hover{
+    transform: scale(1.2);
+}
+
+#logo-cidade{
+  width: 100%;
+  margin-top: -20%;
+  margin-bottom: -1%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+

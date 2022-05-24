@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="img/icon.png"/>
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+        <script src="http://www.youtube.com/player_api"></script>
+        
+        <script language="javascript">
+            var title = document.title;
+            document.title = "O Que Vem E O Que Foi";
+        </script>
+    </head>
+
+    <body>
+
+        <!--SOM-->
+        <audio id="click">
+            <source src="som/click.mp3"></source>
+        </audio>
+
+        <!--VIDEOS-->
+        <video id="video-intro" autoplay playsinline autoplay="autoplay" preload="auto" loop="loop" muted controls>
+            <source src="videos/intro.mp4"  type="video/mp4">
+        </video>
+
+        <iframe id="video-trailer" width="90%" height="90%" src="https://www.youtube.com/embed/Wslo41kSPJs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+        <iframe id="vid-nuno" width="80%" height="80%" width="560" height="315" src="https://www.youtube.com/embed/M9lt1pDnNxA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe id="vid-cedofeita" width="80%" height="80%" src="https://www.youtube.com/embed/cp3diirbtic?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe id="vid-olinda" width="80%" height="80%" src="https://www.youtube.com/embed/sMWlzfz4qCk?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe id="vid-vestidos" width="80%" height="80%" src="https://www.youtube.com/embed/hIBuIldcsAM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe id="vid-ribeira" width="80%" height="80%"  src="https://www.youtube.com/embed/Fuhv05VgcxI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     
+        <!--IMAGENS-->
+        
+        <img id="close" src="img/cruz.png">
+
+        <img id="cidade" src="img/cidade.png">
+
+        <script language="javascript" type="text/javascript">
+
+            // REMOVER VIDEO
+            var videotrailer = document.getElementById("video-trailer");
+            document.body.removeChild(videotrailer);
+          
+            // REMOVER IMAGENS  
+
+            var imgcruz = document.getElementById("close");
+            document.body.removeChild(imgcruz);
+
+            var imgcidade = document.getElementById("cidade");
+            document.body.removeChild(imgcidade);
+     
+        // PRIMEIRA PAGINA E HOMEPAGE
+
+        function abrirtrailer() {
+            document.body.removeChild(paginaintro);
+            paginaintro.removeChild(videointro);
+            document.body.appendChild(sidenavtrailer);
+        }
+
+        abrirTimeout = setTimeout(abrirtrailer, 9000);
+
+        function cancelabrirtrailertimeout() {
+            clearTimeout(abrirTimeout);
+            abrirtrailer();
+        }
+        
+
+        function fechartrailer() {
+            document.body.removeChild(sidenavtrailer);
+            sidenavtrailer.removeChild(videotrailer);
+            sidenavtrailer.removeChild(imgcruz);
+            document.body.appendChild(paginainicial);
+        }
+
+        abrirTimeout2 = setTimeout(fechartrailer, 72000);
+
+        function cancelfechartrailertimeout() {
+            clearTimeout(abrirTimeout2);
+            fechartrailer();
+        }
+
+
+
+        // SLIDE
+
+        function abrirbio (){
+            fotosslide.removeChild(containerslide);
+            fotosslide.removeChild(containerslide2);
+            fotosslide.removeChild(containerslide3);
+            fotosslide.removeChild(containerslide4);
+            fotosslide.removeChild(containerslide5);
+            paginainicial.removeChild(autor);
+            paginainicial.removeChild(poema);
+            paginainicial.removeChild(cidade);
+
+
+            document.body.appendChild(bio);
+            reportWindowSize();
+        
+        }
+
+        function abrirbio2 (){
+            fotosslide.removeChild(containerslide);
+            fotosslide.removeChild(containerslide2);
+            fotosslide.removeChild(containerslide3);
+            fotosslide.removeChild(containerslide4);
+            fotosslide.removeChild(containerslide5);
+            paginainicial.removeChild(autor);
+            paginainicial.removeChild(poema);
+            paginainicial.removeChild(cidade);
+
+
+            document.body.appendChild(bio2);
+            reportWindowSize();
+        
+        }
+
+        function abrirbio3 (){
+            fotosslide.removeChild(containerslide);
+            fotosslide.removeChild(containerslide2);
+            fotosslide.removeChild(containerslide3);
+            fotosslide.removeChild(containerslide4);
+            fotosslide.removeChild(containerslide5);
+            paginainicial.removeChild(autor);
+            paginainicial.removeChild(poema);
+            paginainicial.removeChild(cidade);
+
+
+            document.body.appendChild(bio3);
+            reportWindowSize();
+        
+        }
+
+        function abrirbio4 (){
+            fotosslide.removeChild(containerslide);
+            fotosslide.removeChild(containerslide2);
+            fotosslide.removeChild(containerslide3);
+            fotosslide.removeChild(containerslide4);
+            fotosslide.removeChild(containerslide5);
+            paginainicial.removeChild(autor);
+            paginainicial.removeChild(poema);
+            paginainicial.removeChild(cidade);
+
+
+            document.body.appendChild(bio4);
+            reportWindowSize();
+        
+        }
+
+        function abrirbio5 (){
+            fotosslide.removeChild(containerslide);
+            fotosslide.removeChild(containerslide2);
+            fotosslide.removeChild(containerslide3);
+            fotosslide.removeChild(containerslide4);
+            fotosslide.removeChild(containerslide5);
+            paginainicial.removeChild(autor);
+            paginainicial.removeChild(poema);
+            paginainicial.removeChild(cidade);
+
+
+            document.body.appendChild(bio5);
+            reportWindowSize();
+        
+        }
+
+       function reportWindowSize() {
+            var bioaltura = window.innerHeight - 65;
+            
+            elems = document.getElementsByClassName("bios");
+            if(elems.length > 0 ) {
+             my_bio = elems[0];
+             my_bio.style.height=String(bioaltura)+'px';
+            }   
+        } 
+        
+        function abrirhomepage(){
+
+            bios = document.getElementsByClassName("bios");
+            if(bios.length > 0 ) {
+             my_bio = bios[0];
+             my_bio.parentElement.removeChild(my_bio);
+            }
+
+            videos = document.getElementsByClassName("videos");
+            if(videos.length > 0 ) {
+             my_video = videos[0];
+             my_video.parentElement.removeChild(my_video);
+            }
+
+            document.getElementById("pagina-inicial");
+            fotosslide.appendChild(containerslide);
+            fotosslide.appendChild(containerslide2);
+            fotosslide.appendChild(containerslide3);
+            fotosslide.appendChild(containerslide4);
+            fotosslide.appendChild(containerslide5);
+            paginainicial.appendChild(poema);
+            paginainicial.appendChild(autor);            
+            paginainicial.appendChild(cidade);
+
+        }
+
+       function abrirmenu1(){         
+        if (document.getElementById("menu-1") == undefined) 
+            {document.body.appendChild(menu1);} 
+            
+        else 
+            {document.body.removeChild(menu1);}
+        }  
+        
+        // BOTOES PAGINA INDIVIDUAL
+
+        function avancarvideo(){
+            document.body.removeChild(bio);
+            document.body.appendChild(navvid);
+        }   
+
+        abrirTimeout3 = setTimeout(avancarvideo, 18000);
+
+        function cancelavancarvideotimeout() {
+            clearTimeout(abrirTimeout3);
+            avancarvideo();
+        }
+
+
+        function avancarvideo2(){
+            document.body.removeChild(bio2);
+            document.body.appendChild(navvid2);
+        }  
+        
+        abrirTimeout4 = setTimeout(avancarvideo2, 18000);
+
+        function cancelavancarvideo2timeout() {
+        clearTimeout(abrirTimeout4);
+        avancarvideo2();
+        }
+
+
+        function avancarvideo3(){
+                document.body.removeChild(bio3);
+                document.body.appendChild(navvid3);
+        }   
+
+        abrirTimeout5 = setTimeout(avancarvideo3, 18000);
+
+        function cancelavancarvideo3timeout() {
+        clearTimeout(abrirTimeout5);
+        avancarvideo3();
+        }
+
+
+        function avancarvideo4(){
+                document.body.removeChild(bio4);
+                document.body.appendChild(navvid4);
+        } 
+        
+        abrirTimeout6 = setTimeout(avancarvideo4, 18000);
+
+        function cancelavancarvideo4timeout() {
+        clearTimeout(abrirTimeout6);
+        avancarvideo4();
+        }
+
+
+        function avancarvideo5(){
+            document.body.removeChild(bio5);
+            document.body.appendChild(navvid5);
+        }   
+
+        abrirTimeout7 = setTimeout(avancarvideo5, 18000);
+
+        function cancelavancarvideo5timeout() {
+        clearTimeout(abrirTimeout7);
+        avancarvideo5();
+        }
+
+        // HOME FROM BIO
+
+
+        function abrirhome(){
+            bios = document.getElementsByClassName("bios");
+            if(bios.length > 0 ) {
+             my_bio = bios[0];
+             my_bio.parentElement.removeChild(my_bio);
+            }
+
+            videos = document.getElementsByClassName("videos");
+            if(videos.length > 0 ) {
+             my_video = videos[0];
+             my_video.parentElement.removeChild(my_video);
+            }
+
+            //document.getElementById("pagina-inicial");
+            fotosslide.appendChild(containerslide);
+            fotosslide.appendChild(containerslide2);
+            fotosslide.appendChild(containerslide3);
+            fotosslide.appendChild(containerslide4);
+            fotosslide.appendChild(containerslide5);
+            paginainicial.appendChild(poema);
+            paginainicial.appendChild(autor);            
+            paginainicial.appendChild(cidade);
+        }
+
+        function abrirhomefinal(){
+            bios = document.getElementsByClassName("bios");
+            if(bios.length > 0 ) {
+             my_bio = bios[0];
+             my_bio.parentElement.removeChild(my_bio);
+            }
+
+            videos = document.getElementsByClassName("videos");
+            if(videos.length > 0 ) {
+             my_video = videos[0];
+             my_video.parentElement.removeChild(my_video);
+            }
+
+            //document.getElementById("pagina-inicial");
+            fotosslide.appendChild(containerslide);
+            fotosslide.appendChild(containerslide2);
+            fotosslide.appendChild(containerslide3);
+            fotosslide.appendChild(containerslide4);
+            fotosslide.appendChild(containerslide5);
+            paginainicial.appendChild(poema);
+            paginainicial.appendChild(autor);            
+            paginainicial.appendChild(cidade);
+        }
+
+        function xhover(){
+            home.src = "img/xh.png"
+        }
+
+        function xout(){
+            home.src = "img/x.png"
+        }
+
+        function setahover(){
+            seguinte.src = "img/setah.png"
+        }
+
+        function setaout(){
+            seguinte.src = "img/seta.png"
+        }
+
+        function playhover(){
+            play.src = "img/playh.png"
+        }
+
+        function playout(){
+            play.src = "img/play.png"
+        }
+
+        function limpar_bios() {
+            bios = document.getElementsByClassName("bios");
+            if(bios.length > 0 ) {
+             my_bio = bios[0];
+             my_bio.parentElement.removeChild(my_bio);
+            }
+
+            videos = document.getElementsByClassName("videos");
+            if(videos.length > 0 ) {
+             my_video = videos[0];
+             my_video.parentElement.removeChild(my_video);
+            }
+        }
+
+        // BOTOES BIO 
+        
+        function abrirseguinte(){
+            limpar_bios();
+            document.body.appendChild(bio2);
+            reportWindowSize();         
+        }
+
+        function abrirseguinte2(){
+            limpar_bios();
+            document.body.appendChild(bio3);
+            reportWindowSize();   
+        }
+
+        function abrirseguinte3(){
+            limpar_bios();
+            document.body.appendChild(bio4);
+            reportWindowSize();   
+        }
+
+        function abrirseguinte4(){
+            limpar_bios();
+            document.body.appendChild(bio5);
+            reportWindowSize();   
+        }
+        function abrirseguinte5(){
+            limpar_bios();
+            document.body.appendChild(bio5);
+            reportWindowSize();   
+        }
+
+        function abriranterior2(){
+            limpar_bios();
+            document.body.appendChild(bio);
+            reportWindowSize();
+            document.getElementById("div-bio");
+        }
+
+        function abriranterior3(){
+            abrirseguinte();
+        }
+
+        function abriranterior4(){
+            abrirseguinte3();
+        }
+
+        function abriranterior5(){
+            abrirseguinte4();
+        }
+        
+        function abrirseguintevid2(){
+            abrirseguinte();
+        }
+
+        function abrirmenucontacto(){    
+            menu2.removeChild(sobre2);
+            menu2.appendChild(contacto2);
+            contacto2.appendChild(imgcontactos);
+        }
+
+    // SOM
+    
+
+    function som() {
+                click.play();
+            }
+            
+
+        /* 0 - PÁGINA INTRO */
+
+        var paginaintro=document.createElement('DIV');
+        paginaintro.id="botaoinicial";
+        paginaintro.addEventListener('click', cancelabrirtrailertimeout);
+        paginaintro.addEventListener('click', som);
+        document.body.appendChild(paginaintro);
+
+        var videointro = document.getElementById("video-intro");
+        videointro.controls = false;
+        paginaintro.appendChild(videointro);
+
+
+        // TRAILER
+
+        var sidenavtrailer = document.createElement('DIV');
+        sidenavtrailer.id ="sidenav-trailer";
+
+        sidenavtrailer.appendChild(videotrailer);
+
+        sidenavtrailer.appendChild(imgcruz);
+        imgcruz.addEventListener('click', fechartrailer);
+        imgcruz.addEventListener('click', som);
+
+
+        // HOMEPAGE - BARRA
+
+        var paginainicial=document.createElement('DIV');
+        paginainicial.id="pagina-inicial";
+
+        var header=document.createElement('DIV');
+        header.id="barra-header";
+        paginainicial.appendChild(header);
+
+        var logo1= document.createElement('IMG');
+        logo1.id="logo-rosa";
+        logo1.src = "img/logo.png";
+        header.appendChild(logo1);
+        logo1.addEventListener('click', abrirhomepage);
+        logo1.addEventListener('click', som);
+
+        var logo2= document.createElement('IMG');
+        logo2.id="titulo-rosa";
+        logo2.src = "img/logotitulo.png";
+        header.appendChild(logo2);
+        logo2.addEventListener('click', abrirhomepage);
+        logo2.addEventListener('click', som);
+
+
+       // MENU 1
+
+        var menu3barras= document.createElement('IMG');
+        menu3barras.id="menubarras";
+        menu3barras.src = "img/3barras.png";
+        header.appendChild(menu3barras);
+        menu3barras.addEventListener('click', abrirmenu1);
+
+        var menu1=document.createElement('DIV');
+        menu1.id="menu-1";
+
+        var sobre=document.createElement('DIV');
+        sobre.id="menu-sobre";
+        sobre.innerHTML="<p>Sobre</p>";
+        menu1.appendChild(sobre);
+        
+        var contacto=document.createElement('DIV');
+        contacto.id="menu-contacto";
+        contacto.innerHTML="<p>Contacto</p>";
+        menu1.appendChild(contacto);
+        contacto.addEventListener('click', abrirmenucontacto);
+
+
+        // MENU 2
+
+        var menu2=document.createElement('DIV');
+        menu2.id="menu-2"; 
+        menu1.appendChild(menu2);
+
+        var sobre2=document.createElement('DIV');
+        sobre2.id="menu-sobre2";
+        sobre2.innerHTML="<p>Este projeto foi desenvolvido por três estudantes universitárias do curso de Ciências da Comunicação:</br></br>- Joana Cirne</br>- Mariana Almeida</br>- Sara Paiva</br></br>A amizade que liga as três há já algum tempo permitiu que desenvolvessem esta ideia criativa e desafiadora, e que com a sua realização muito aprendessem.</br></br>“O que vem, e o que foi” junta o melhor de cada uma e nasce como o primeiro projeto deste trio.</p>";
+        menu2.appendChild(sobre2);
+        
+        var contacto2=document.createElement('DIV');
+        contacto2.id="menu-contacto2";     
+
+        var imgcontactos=document.createElement('IMG');
+        imgcontactos.id="img-contactos";
+        imgcontactos.src="img/redes.png";
+        
+
+        // SLIDE
+
+        var fotosslide=document.createElement('DIV');
+        fotosslide.id="fotos-slide";
+        paginainicial.appendChild(fotosslide);
+
+        var containerslide=document.createElement('DIV');
+        containerslide.id="container-slide";
+        fotosslide.appendChild(containerslide);
+        containerslide.addEventListener('click', abrirbio)
+        containerslide.addEventListener('click', som);
+
+       /* var txtslide1=document.createElement('DIV');
+        txtslide1.id="txt-slide1";
+        txtslide1.innerHTML="<p>"Nuno"<p>"
+        containerslide.appendChild(txtslide1); */
+        
+
+        var containerslide2=document.createElement('DIV');
+        containerslide2.id="container-slide2";
+        fotosslide.appendChild(containerslide2);
+        containerslide2.addEventListener('click', abrirbio2);
+        containerslide2.addEventListener('click', som);
+
+        var containerslide3=document.createElement('DIV');
+        containerslide3.id="container-slide3";
+        fotosslide.appendChild(containerslide3);
+        containerslide3.addEventListener('click', abrirbio3);
+        containerslide3.addEventListener('click', som);
+
+        var containerslide4=document.createElement('DIV');
+        containerslide4.id="container-slide4";
+        fotosslide.appendChild(containerslide4);
+        containerslide4.addEventListener('click', abrirbio4);
+        containerslide4.addEventListener('click', som);
+
+        var containerslide5=document.createElement('DIV');
+        containerslide5.id="container-slide5";
+        fotosslide.appendChild(containerslide5);
+        containerslide5.addEventListener('click', abrirbio5);
+        containerslide5.addEventListener('click', som);
+
+
+        // POEMA
+
+        var poema = document.createElement('DIV');
+        poema.id="poema1";
+        poema.innerHTML="<p>“ Não tens preço na terra dos humanos,<br>Nem o tempo te rói.<br>És a essência dos anos,<br>O que vem e o que foi .“</p>"
+        paginainicial.appendChild(poema);
+
+        var autor = document.createElement('DIV');
+        autor.id="autor1";
+        autor.innerHTML="<p>Miguel Torga, 1946</p>"
+        paginainicial.appendChild(autor);
+
+
+        // RODAPÉ
+
+        var cidade= document.createElement('IMG');
+        cidade.id="logo-cidade";
+        cidade.src = "img/cidade.png";
+        paginainicial.appendChild(cidade);
+
+        
+        // BIO INDIVIDUAL 
+
+        var bio=document.createElement('DIV');
+        bio.id="div-bio";
+        bio.className="bios";
+        
+        window.addEventListener('resize', reportWindowSize);
+
+
+        // NUNO CANAVEZ
+
+        var imgnunocanavezbio= document.createElement('IMG');
+        imgnunocanavezbio.id="nunocanavezbio";
+        imgnunocanavezbio.src = "img/imgnunocanavez.png";
+        bio.appendChild(imgnunocanavezbio);
+
+       var nomenunocanavez= document.createElement('IMG');
+        nomenunocanavez.id="nome-nc";
+        nomenunocanavez.src = "img/nomenunocanavez.png";
+        bio.appendChild(nomenunocanavez);
+        
+       var  textobio1 = document.createElement('DIV');
+        textobio1.id="texto-bio1";
+        textobio1.innerHTML="<p>Nuno Canavez é o mais antigo alfarrabista da cidade do Porto.<br>Nasceu há 87 anos no Vale do Juncal, uma pequena localidade do concelho de Mirandela.<br>Com apenas 13 anos, em de 1948, mudou-se para o Porto, onde iniciou a sua caminhada<br>na histórica <strong>Livraria Académica</strong>. Começando por marçano de Joaquim Guedes da Silva,<br>o fundador, Nuno Canavez é hoje o dono deste mítico estabelecimento.<br>Por entre risadas e ensinamentos, contou-nos um pouco da sua história.   ";
+        bio.appendChild(textobio1);
+
+        var  citbio1 = document.createElement('DIV');
+        citbio1.id="cit-bio1";
+        citbio1.innerHTML="<p>“Vale sempre a pena fazer bem”";
+        bio.appendChild(citbio1); 
+
+
+        // ICONS
+
+        var play= document.createElement('IMG');
+        play.id="play-icon";
+        play.src = "img/play.png";
+        bio.appendChild(play);
+        play.addEventListener('click', avancarvideo);
+        play.addEventListener('click', som);
+        play.addEventListener('mouseover', playhover);
+        play.addEventListener('mouseout', playout);
+
+
+        var home= document.createElement('IMG');
+        home.id="home-icon";
+        home.src = "img/x.png";
+        bio.appendChild(home);
+        home.addEventListener('click', abrirhome);
+        home.addEventListener('click', som); 
+        home.addEventListener('mouseover', xhover);
+        home.addEventListener('mouseout', xout);
+
+        var seguinte= document.createElement('IMG');
+        seguinte.id="seta-icon";
+        seguinte.src = "img/seta.png";
+        bio.appendChild(seguinte);
+        seguinte.addEventListener('click', abrirseguinte);
+        seguinte.addEventListener('click', som); 
+        seguinte.addEventListener('mouseover', setahover);
+        seguinte.addEventListener('mouseout', setaout);
+
+
+        // VIDEOS
+
+        var navvid=document.createElement('DIV');
+        navvid.id="nav-vid";
+        navvid.className="videos";
+
+
+        // VIDEO NUNO
+
+        var divmoldura= document.createElement('DIV');
+        divmoldura.id="moldura";
+        navvid.appendChild(divmoldura);
+        
+        var vidnuno = document.getElementById("vid-nuno");
+        divmoldura.appendChild(vidnuno);
+
+
+
+        var seguintevid2= document.createElement('IMG');
+        seguintevid2.id="seguinte-2";
+        seguintevid2.src = "img/seta.png";
+        navvid.appendChild(seguintevid2);
+        seguintevid2.addEventListener('click', abrirseguintevid2);
+        seguintevid2.addEventListener('click', som); 
+
+        var anterior2= document.createElement('IMG');
+        anterior2.id="anterior-2";
+        anterior2.src = "img/seta2.png";
+        navvid.appendChild(anterior2);
+        anterior2.addEventListener('click', abriranterior2);
+        anterior2.addEventListener('click', som);
+
+        // BIO INDIVIDUAL 2
+
+        var bio2=document.createElement('DIV');
+        bio2.id="div-bio2";
+        bio2.className="bios";
+
+
+        // AMÉRICO DE OLIVEIRA
+
+        var imgcedofeita= document.createElement('IMG');
+        imgcedofeita.id="img-cedofeita";
+        imgcedofeita.src = "img/imgcedofeita.png";
+        bio2.appendChild(imgcedofeita);
+
+        var nomeamerico= document.createElement('IMG');
+        nomeamerico.id="nome-americo";
+        nomeamerico.src = "img/nome-americo.png";
+        bio2.appendChild(nomeamerico);
+        
+        var  textobio2 = document.createElement('DIV');
+        textobio2.id="texto-bio2";
+        textobio2.innerHTML="<p>Américo de Oliveira tem 73 anos e é natural de Ponte de Lima.<br>No entanto, o seu coração está na cidade do Porto, onde reside há mais de 50 anos.<br>Merceeiro de raiz, como dizem os antigos, há 60 anos que é feliz neste ramo, que<br>por muito já o fez passar. Foi há 21 anos que tomou conta da <strong>Mercado de Cedofeita</strong>, e<br>com o seu jeito sincero e brincalhão, contou-nos algumas das suas histórias,<br>assim como das suas preocupações. ";
+        bio2.appendChild(textobio2);
+
+
+        // ICONS
+
+        var play2= document.createElement('IMG');
+        play2.id="play-icon2";
+        play2.src = "img/play.png";
+        bio2.appendChild(play2);
+        play2.addEventListener('click', avancarvideo2);
+        play2.addEventListener('click', som);
+        play2.addEventListener('mouseover', playhover);
+        play2.addEventListener('mouseout', playout);
+
+
+        var home2= document.createElement('IMG');
+        home2.id="home-icon2";
+        home2.src = "img/x.png";
+        bio2.appendChild(home2);
+        home2.addEventListener('click', abrirhome);
+        home2.addEventListener('click', som); 
+
+        var seguinte2= document.createElement('IMG');
+        seguinte2.id="seta-icon2";
+        seguinte2.src = "img/seta.png";
+        bio2.appendChild(seguinte2);
+        seguinte2.addEventListener('click', abrirseguinte2);
+        seguinte2.addEventListener('click', som); 
+
+
+
+        // VIDEOS
+
+        var navvid2=document.createElement('DIV');
+        navvid2.id="nav-vid2";
+        navvid2.className="videos";
+
+
+        // VIDEO CEDOFEITA
+
+        var divmoldura2= document.createElement('DIV');
+        divmoldura2.id="moldura2";
+        navvid2.appendChild(divmoldura2);
+        
+        var vidcedofeita = document.getElementById("vid-cedofeita");
+        divmoldura2.appendChild(vidcedofeita);
+
+        var seguinte3= document.createElement('IMG');
+        seguinte3.id="seguinte-3";
+        seguinte3.src = "img/seta.png";
+        navvid2.appendChild(seguinte3);
+        seguinte3.addEventListener('click', abrirseguinte2);
+        seguinte3.addEventListener('click', som); 
+
+        var anterior3= document.createElement('IMG');
+        anterior3.id="anterior-3";
+        anterior3.src = "img/seta2.png";
+        navvid2.appendChild(anterior3);
+        anterior3.addEventListener('click', abriranterior3);
+        anterior3.addEventListener('click', som);
+
+
+        // BIO INDIVIDUAL 3
+
+        var bio3=document.createElement('DIV');
+        bio3.id="div-bio3";
+        bio3.className="bios";
+
+        // OLINDA
+
+        var imgolinda= document.createElement('IMG');
+        imgolinda.id="img-olinda";
+        imgolinda.src = "img/imgbolhao.png";
+        bio3.appendChild(imgolinda);
+
+        var nomeolinda= document.createElement('IMG');
+        nomeolinda.id="nome-olinda";
+        nomeolinda.src = "img/nome-olinda.png";
+        bio3.appendChild(nomeolinda);
+        
+        var  textobio3 = document.createElement('DIV');
+        textobio3.id="texto-bio3";
+        textobio3.innerHTML="<p>Maria Olinda Remísio tem 66 anos e para ela o melhor da vida são as suas filhas. Casou com<br>19 anos e até hoje segue apaixonada. E como filho de peixe sabe nadar, este caso não é<br>exceção há regra. A sua mãe era salsicheira e desde tenra idade que Maria Olinda a<br>ajudava na sua loja.Foi também aos 19 anos que tomou conta do seu primeiro<br>negócio,no Mercado do Bolhão. Há mais de 40 anos que a <strong>Salsicharia Lininha</strong> é<br>um negócio de referência. Com a simpatia e bondade que lhe caracterizam,<br>a salsicheiraOlinda deu-nos o privilégio de a<br>conhecer melhor.    ";
+        bio3.appendChild(textobio3);
+
+
+        // ICONS
+
+        var play3= document.createElement('IMG');
+        play3.id="play-icon3";
+        play3.src = "img/play.png";
+        bio3.appendChild(play3);
+        play3.addEventListener('click', avancarvideo3);
+        play3.addEventListener('click', som);
+        play3.addEventListener('mouseover', playhover);
+        play3.addEventListener('mouseout', playout);
+
+
+        var home3= document.createElement('IMG');
+        home3.id="home-icon3";
+        home3.src = "img/x.png";
+        bio3.appendChild(home3);
+        home3.addEventListener('click', abrirhome);
+        home3.addEventListener('click', som); 
+
+        var seguinte4= document.createElement('IMG');
+        seguinte4.id="seta-icon3";
+        seguinte4.src = "img/seta.png";
+        bio3.appendChild(seguinte4);
+        seguinte4.addEventListener('click', abrirseguinte3);
+        seguinte4.addEventListener('click', som); 
+
+        // VIDEO OLINDA
+
+        var navvid3=document.createElement('DIV');
+        navvid3.id="nav-vid3";
+        navvid3.className="videos";
+
+        var divmoldura3= document.createElement('DIV');
+        divmoldura3.id="moldura3";
+        navvid3.appendChild(divmoldura3);
+        
+        var vidolinda = document.getElementById("vid-olinda");
+        divmoldura3.appendChild(vidolinda);
+
+        var seguinte5= document.createElement('IMG');
+        seguinte5.id="seguinte-5";
+        seguinte5.src = "img/seta.png";
+        navvid3.appendChild(seguinte5);
+        seguinte5.addEventListener('click', abrirseguinte3);
+        seguinte5.addEventListener('click', som); 
+
+        var anterior5= document.createElement('IMG');
+        anterior5.id="anterior-5";
+        anterior5.src = "img/seta2.png";
+        navvid3.appendChild(anterior5);
+        anterior5.addEventListener('click', abriranterior3);
+        anterior5.addEventListener('click', som);
+
+        // BIO INDIVIDUAL 4
+
+        var bio4=document.createElement('DIV');
+        bio4.id="div-bio4";
+        bio4.className="bios";
+
+        // VESTIDOS
+
+        var imgvestidos= document.createElement('IMG');
+        imgvestidos.id="img-vestidos";
+        imgvestidos.src = "img/imgvestidos.png";
+        bio4.appendChild(imgvestidos);
+
+        var nomevestidos= document.createElement('IMG');
+        nomevestidos.id="nome-vestidos";
+        nomevestidos.src = "img/nome-avelino.png";
+        bio4.appendChild(nomevestidos);
+        
+        var  textobio4 = document.createElement('DIV');
+        textobio4.id="texto-bio4";
+        textobio4.innerHTML="<p>Avelino Carneiro tem 74 anos e é dono de uma das lojas de vestidos mais prestigiada da cidade<br>do Porto. <strong>A Pétala</strong> é uma firma única a confecionar vestimentas de cerimónia por medida.<br>Aqui as escalas presentes nas lojas mais comerciais não existem, uma vez que todas as<br>clientes merecem o melhor vestido, independentemente do seu tamanho. Há mais de<br>40 anos que este negócio é o número um da zona, e é o excelente atendimento ao<br>público e a vasta clientela que mantêm estas portas abertas. ";
+        bio4.appendChild(textobio4);
+
+
+        // ICONS
+
+
+        var play4= document.createElement('IMG');
+        play4.id="play-icon4";
+        play4.src = "img/play.png";
+        bio4.appendChild(play4);
+        play4.addEventListener('click', avancarvideo4);
+        play4.addEventListener('click', som);
+
+
+
+        var home4= document.createElement('IMG');
+        home4.id="home-icon4";
+        home4.src = "img/x.png";
+        bio4.appendChild(home4);
+        home4.addEventListener('click', abrirhome);
+        home4.addEventListener('click', som); 
+
+        var seguinte6= document.createElement('IMG');
+        seguinte6.id="seta-icon4";
+        seguinte6.src = "img/seta.png";
+        bio4.appendChild(seguinte6);
+        seguinte6.addEventListener('click', abrirseguinte4);
+        seguinte6.addEventListener('click', som); 
+
+
+        // VIDEO VESTIDOS
+
+
+        var navvid4=document.createElement('DIV');
+        navvid4.id="nav-vid4";
+        navvid4.className="videos";
+
+
+        var divmoldura4= document.createElement('DIV');
+        divmoldura4.id="moldura4";
+        navvid4.appendChild(divmoldura4);
+        
+
+        var vidvestidos = document.getElementById("vid-vestidos");
+        divmoldura4.appendChild(vidvestidos);
+
+
+        var seguinte7= document.createElement('IMG');
+        seguinte7.id="seguinte-7";
+        seguinte7.src = "img/seta.png";
+        navvid4.appendChild(seguinte7);
+        seguinte7.addEventListener('click', abrirseguinte4);
+        seguinte7.addEventListener('click', som); 
+
+
+        var anterior7= document.createElement('IMG');
+        anterior7.id="anterior-5";
+        anterior7.src = "img/seta2.png";
+        navvid4.appendChild(anterior7);
+        anterior7.addEventListener('click', abriranterior4);
+        anterior7.addEventListener('click', som);
+
+        // BIO INDIVIDUAL 5
+
+        var bio5=document.createElement('DIV');
+        bio5.id="div-bio5";
+        bio5.className="bios";
+
+        // RIBEIRA
+
+        var imgribeira= document.createElement('IMG');
+        imgribeira.id="img-ribeira";
+        imgribeira.src = "img/imgribeira.png";
+        bio5.appendChild(imgribeira);
+
+
+        var nomeribeira= document.createElement('IMG');
+        nomeribeira.id="nome-ribeira";
+        nomeribeira.src = "img/nome-antonio.png";
+        bio5.appendChild(nomeribeira);
+        
+
+        var  textobio5 = document.createElement('DIV');
+        textobio5.id="texto-bio4";
+        textobio5.innerHTML="<p>O <strong>Mercado São João</strong> leva já 40 anos de serviço, sendo uma das mais antigas mercearias da<br>cidade do Porto.Este negócio familiar já passou pelas várias gerações dos 6 irmãos Silva:<br>os 3 mais velhos fundadores, e os 3 mais novos que atualmente lá trabalham. António Silva<br>aceitou o nosso convite e contou-nos um pouco da história deste célebre mercado, que<br>se salienta dos demais pela qualidade e frescura dos seus produtos, e pelo ambiente<br>familiar e acolhedor com que recebem todos os clientes.  ";
+        bio5.appendChild(textobio5);
+
+
+        // ICONS
+
+
+        var play5= document.createElement('IMG');
+        play5.id="play-icon5";
+        play5.src = "img/play.png";
+        bio5.appendChild(play5);
+        play5.addEventListener('click', avancarvideo5);
+        play5.addEventListener('click', som);
+        play5.addEventListener('mouseover', playhover);
+        play5.addEventListener('mouseout', playout);
+
+
+        var home5= document.createElement('IMG');
+        home5.id="home-icon5";
+        home5.src = "img/x.png";
+        bio5.appendChild(home5);
+        home5.addEventListener('click', abrirhome);
+        home5.addEventListener('click', som); 
+
+
+        /* var seguinte8= document.createElement('IMG');
+        seguinte8.id="seta-icon6";
+        seguinte8.src = "img/seta.png";
+        bio5.appendChild(seguinte8);
+        seguinte8.addEventListener('click', abrirseguinte5);
+        seguinte8.addEventListener('click', som); */
+
+
+        // VIDEO RIBEIRA
+
+
+        var navvid5=document.createElement('DIV');
+        navvid5.id="nav-vid5";
+        navvid5.className="videos";
+
+
+        var divmoldura5= document.createElement('DIV');
+        divmoldura5.id="moldura4";
+        navvid5.appendChild(divmoldura5);
+        
+
+        var vidribeira = document.getElementById("vid-ribeira");
+        divmoldura5.appendChild(vidribeira);
+
+
+        var xfinal= document.createElement('IMG');
+        xfinal.id="x-final";
+        xfinal.src = "img/x.png";
+        navvid5.appendChild(xfinal);
+        xfinal.addEventListener('click', abrirhomefinal);
+        xfinal.addEventListener('click', som); 
+
+
+        var anterior9= document.createElement('IMG');
+        anterior9.id="anterior-9";
+        anterior9.src = "img/seta2.png";
+        navvid5.appendChild(anterior9);
+        anterior9.addEventListener('click', abriranterior5);
+        anterior9.addEventListener('click', som);
+
+
+        </script>
+</body>
+</html>
+
+
+
+
